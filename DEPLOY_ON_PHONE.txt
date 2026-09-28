@@ -1,0 +1,15 @@
+CURE AI — PHONE DEPLOYMENT
+
+1) Extract the ZIP.
+2) Create a new GitHub repository.
+3) Upload every extracted file AND the api folder.
+4) Go to Vercel and import the GitHub repository.
+5) Deploy.
+6) Vercel Project > Settings > Environment Variables.
+7) Add:
+   HF_TOKEN = your hf_ token
+8) Optional:
+   HF_MODEL = Qwen/Qwen3.8-27B:novita
+9) Save and redeploy.
+
+NEVER put your HF token into config.js or any GitHub file.

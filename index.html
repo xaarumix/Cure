@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071126">
+  <title>Cure AI — Personal AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="logo-mark">C</div>
+        <div><div class="brand-name">Cure <span>AI</span></div><div class="brand-sub">Your Personal AI Assistant</div></div>
+      </div>
+
+      <nav>
+        <button class="nav-item active" data-action="home"><span>⌂</span> Home</button>
+        <button class="nav-item" data-action="new"><span>✦</span> New Chat</button>
+        <button class="nav-item" data-action="explore"><span>◈</span> Explore</button>
+        <button class="nav-item" data-action="image"><span>▧</span> Image Generator</button>
+        <button class="nav-item" data-action="file"><span>▤</span> File Assistant</button>
+        <button class="nav-item" data-action="voice"><span>♩</span> Voice Chat</button>
+        <button class="nav-item" data-action="history"><span>◷</span> History</button>
+        <button class="nav-item" data-action="settings"><span>⚙</span> Settings</button>
+      </nav>
+
+      <div class="pro-card">
+        <div class="pro-icon">♛</div>
+        <h3>Cure AI Pro</h3>
+        <p>Unlock more features, be more productive!</p>
+        <button class="gradient-btn" id="upgradeBtn">Upgrade <b>›</b></button>
+      </div>
+
+      <div class="creator"><span class="code-icon">&lt;/&gt;</span><div>Created by<br><strong>Aditya Mandal</strong></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn">☰</button>
+        <div class="top-links"><span>Think</span><i>·</i><span>Ask</span><i>·</i><span>Create</span><i>·</i><span>Grow</span></div>
+        <div class="top-actions">
+          <button class="theme-btn" id="themeBtn">☼　☾</button>
+          <button class="avatar">♙</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="hero-card">
+          <div class="hero-art">
+            <div class="hero-glow"></div>
+            <div class="hero-logo">C</div>
+            <h1>Cure <span>AI</span></h1>
+            <p>Your Ideas　·　My Intelligence</p>
+          </div>
+          <div class="welcome">
+            <h2>Hello Adi 👋</h2>
+            <p>I'm Cure AI, your personal AI assistant.<br>Ask me anything, anytime!</p>
+            <div class="chips">
+              <button data-prompt="Give me a smart answer about ">✦ Smart Answers</button>
+              <button data-prompt="Give me creative ideas for ">💡 Creative Ideas</button>
+              <button data-prompt="Help me write code for ">⌘ Code Help</button>
+              <button data-prompt="Help me create an image prompt for ">▧ Image Generation</button>
+              <button data-prompt="Help me analyze this file: ">▤ File Analysis</button>
+              <button data-prompt="Tell me something interesting about ">••• And More...</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title"><span>ϟ</span><div><h2>Quick Start</h2><p>Tap a suggestion or type your own message...</p></div></div>
+        <div class="quick-grid">
+          <button class="quick-card" data-prompt="Explain this topic simply: "><b>💡</b><strong>Explain anything</strong><small>Get simple & clear explanations</small></button>
+          <button class="quick-card" data-prompt="Write code for: "><b>⌘</b><strong>Write code</strong><small>HTML, Python, JS, & more</small></button>
+          <button class="quick-card" data-prompt="Create an image prompt for: "><b>▧</b><strong>Generate image</strong><small>Turn your ideas into visuals</small></button>
+          <button class="quick-card" data-prompt="Help me write: "><b>✎</b><strong>Help with writing</strong><small>Emails, captions, essays, etc.</small></button>
+          <button class="quick-card" data-prompt="Help me study this: "><b>▥</b><strong>Study & learn</strong><small>Summaries, notes, quizzes</small></button>
+          <button class="quick-card" data-prompt="Tell me a fun fact about "><b>★</b><strong>Random fun</strong><small>Jokes, facts, stories & more</small></button>
+        </div>
+
+        <div class="chat-panel" id="chatPanel">
+          <div class="messages" id="messages"></div>
+          <form class="composer" id="chatForm">
+            <textarea id="messageInput" rows="1" placeholder="Type your message..."></textarea>
+            <div class="composer-actions">
+              <label class="icon-btn" title="Attach file">📎<input type="file" id="fileInput" hidden></label>
+              <button type="button" class="icon-btn" id="imageBtn" title="Image">▧</button>
+              <button type="button" class="icon-btn" id="micBtn" title="Voice">♩</button>
+              <button type="submit" class="send-btn" title="Send">➤</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="rightbar">
+      <section class="panel premium">
+        <div class="panel-title"><span class="crown">♛</span><h3>Premium Features</h3></div>
+        <p>Unlock the full potential of Cure AI</p>
+        <ul>
+          <li>✓ Access to latest AI models</li><li>✓ Unlimited messages</li><li>✓ Image generation (HD)</li>
+          <li>✓ File & document analysis</li><li>✓ Voice interaction</li><li>✓ Priority support</li>
+        </ul>
+        <button class="gradient-btn" id="upgradeBtn2">♛ Upgrade Now　›</button>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title"><span>⚙</span><h3>Popular Models</h3><em>NEW</em></div>
+        <div class="model-list" id="modelList">
+          <button class="model selected" data-model="Qwen/Qwen3.8-27B:novita"><b>◉</b><span><strong>Qwen 3.8 27B</strong><small>Fast & capable</small></span><i>✓</i></button>
+          <button class="model" data-model="Qwen/Qwen3.8-27B:deepinfra"><b>✦</b><span><strong>Qwen 3.8 27B</strong><small>Deep thinking</small></span></button>
+          <button class="model" data-model="meta-llama/Llama-3.3-70B-Instruct"><b>◈</b><span><strong>Llama 3.3 70B</strong><small>Open & flexible</small></span></button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title"><span>✦</span><h3>Features</h3></div>
+        <div class="feature"><b>◉</b><span><strong>Chat with AI</strong><small>Get instant answers</small></span></div>
+        <div class="feature"><b>▧</b><span><strong>Image Generation</strong><small>Create stunning images</small></span></div>
+        <div class="feature"><b>▤</b><span><strong>File Upload</strong><small>PDF, DOCs, TXT, etc.</small></span></div>
+        <div class="feature"><b>♩</b><span><strong>Voice Chat</strong><small>Talk to your AI</small></span></div>
+        <div class="feature"><b>⌕</b><span><strong>Web Search</strong><small>Real-time information</small></span></div>
+      </section>
+
+      <section class="panel built">
+        <div class="heart">♥</div><strong>Built with passion</strong>
+        <p>Created by</p><h3>Aditya Mandal</h3>
+      </section>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
